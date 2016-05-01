@@ -17,6 +17,8 @@
 		92E16AF51CD3EEF1005EA79E /* HKCompakt-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92E16AF41CD3EEB2005EA79E /* HKCompakt-Medium.ttf */; };
 		92E16AF71CD3F137005EA79E /* gglogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E16AF61CD3F137005EA79E /* gglogo.png */; };
 		92E16AFB1CD5815C005EA79E /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E16AFA1CD5815C005EA79E /* ImageCell.swift */; };
+		92E16AFF1CD66AB8005EA79E /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E16AFE1CD66AB8005EA79E /* FinalViewController.swift */; };
+		92E16B031CD66E95005EA79E /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E16B021CD66E95005EA79E /* UIImage+animatedGIF.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,10 @@
 		92E16AF41CD3EEB2005EA79E /* HKCompakt-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HKCompakt-Medium.ttf"; sourceTree = "<group>"; };
 		92E16AF61CD3F137005EA79E /* gglogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gglogo.png; sourceTree = "<group>"; };
 		92E16AFA1CD5815C005EA79E /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		92E16AFE1CD66AB8005EA79E /* FinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
+		92E16B001CD66E8B005EA79E /* SwiftGIFImage-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftGIFImage-Bridging-Header.h"; sourceTree = "<group>"; };
+		92E16B011CD66E95005EA79E /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		92E16B021CD66E95005EA79E /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,8 @@
 		92292B6B1CD3AFE40011121E = {
 			isa = PBXGroup;
 			children = (
+				92E16B011CD66E95005EA79E /* UIImage+animatedGIF.h */,
+				92E16B021CD66E95005EA79E /* UIImage+animatedGIF.m */,
 				92292B761CD3AFE50011121E /* videoWriter */,
 				92292B8C1CD3AFE50011121E /* videoWriterTests */,
 				92292B751CD3AFE50011121E /* Products */,
@@ -85,9 +93,11 @@
 		92292B761CD3AFE50011121E /* videoWriter */ = {
 			isa = PBXGroup;
 			children = (
+				92E16B001CD66E8B005EA79E /* SwiftGIFImage-Bridging-Header.h */,
 				92292B791CD3AFE50011121E /* AppDelegate.swift */,
 				92292B7B1CD3AFE50011121E /* FirstViewController.swift */,
 				92292B991CD3B0C00011121E /* SecondViewController.swift */,
+				92E16AFE1CD66AB8005EA79E /* FinalViewController.swift */,
 				92E16AFA1CD5815C005EA79E /* ImageCell.swift */,
 				92292B7D1CD3AFE50011121E /* Main.storyboard */,
 				92292B801CD3AFE50011121E /* Images.xcassets */,
@@ -226,6 +236,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92E16B031CD66E95005EA79E /* UIImage+animatedGIF.m in Sources */,
+				92E16AFF1CD66AB8005EA79E /* FinalViewController.swift in Sources */,
 				92292B9A1CD3B0C00011121E /* SecondViewController.swift in Sources */,
 				92E16AFB1CD5815C005EA79E /* ImageCell.swift in Sources */,
 				92292B7C1CD3AFE50011121E /* FirstViewController.swift in Sources */,
@@ -311,6 +323,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Anthony/Desktop/xcode shit/videoWriter/videoWriter/SwiftGIFImage-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -348,6 +361,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Anthony/Desktop/xcode shit/videoWriter/videoWriter/SwiftGIFImage-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

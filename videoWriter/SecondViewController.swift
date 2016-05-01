@@ -18,6 +18,7 @@ class SecondViewController: UIViewController, UINavigationControllerDelegate, UI
     var imagePicker = UIImagePickerController()
     var currentSelectedCell = -1;
     var looping = 0;
+    var _fileURL:NSURL?
 
     @IBOutlet weak var frameChooser: UICollectionView!
     @IBOutlet weak var frameNumberLabel: UILabel!
@@ -132,9 +133,16 @@ class SecondViewController: UIViewController, UINavigationControllerDelegate, UI
         }
         
         NSLog("url=%@", fileURL);
+        _fileURL = fileURL
+        
         
     }
     
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "finish") {
+            (segue.destinationViewController as! FinalViewController).passed = _fileURL
+        }
+    }
 }
 

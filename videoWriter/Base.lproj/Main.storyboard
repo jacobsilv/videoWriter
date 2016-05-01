@@ -183,7 +183,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createGif:" destination="uwz-Dq-ZLP" eventType="touchUpInside" id="pum-V4-iOR"/>
-                                    <segue destination="P1G-wx-pyZ" kind="show" id="sZs-ie-R9q"/>
+                                    <segue destination="P1G-wx-pyZ" kind="show" identifier="finish" id="sZs-ie-R9q"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -216,7 +216,7 @@
         <!--Final-->
         <scene sceneID="eI2-xH-F3s">
             <objects>
-                <viewController title="Final" id="P1G-wx-pyZ" sceneMemberID="viewController">
+                <viewController title="Final" id="P1G-wx-pyZ" customClass="FinalViewController" customModule="videoWriter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xhv-1t-C1e"/>
                         <viewControllerLayoutGuide type="bottom" id="Pfc-fD-e1y"/>
@@ -224,12 +224,28 @@
                     <view key="view" contentMode="scaleToFill" id="PW0-Wx-lnD">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RHq-BV-W62">
+                                <rect key="frame" x="146" y="141" width="309" height="317"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="309" id="wab-dD-XaQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pfc-fD-e1y" firstAttribute="top" secondItem="RHq-BV-W62" secondAttribute="bottom" constant="142" id="Sya-RQ-3pD"/>
+                            <constraint firstItem="RHq-BV-W62" firstAttribute="centerX" secondItem="PW0-Wx-lnD" secondAttribute="centerX" id="U41-Cw-xnW"/>
+                            <constraint firstItem="RHq-BV-W62" firstAttribute="top" secondItem="Xhv-1t-C1e" secondAttribute="bottom" constant="77" id="dxZ-CJ-vkQ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="finalGif" destination="RHq-BV-W62" id="yNh-9a-yQ6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vut-vO-qPd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3366" y="337"/>
+            <point key="canvasLocation" x="3386" y="337"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ivz-gG-wBX">
