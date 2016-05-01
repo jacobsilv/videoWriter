@@ -176,6 +176,16 @@
                                     <action selector="createGif:" destination="uwz-Dq-ZLP" eventType="touchUpInside" id="IOB-bY-yz5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1EY-fx-VXB">
+                                <rect key="frame" x="42" y="89" width="112" height="30"/>
+                                <state key="normal" title="Make it">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="createGif:" destination="uwz-Dq-ZLP" eventType="touchUpInside" id="pum-V4-iOR"/>
+                                    <segue destination="P1G-wx-pyZ" kind="show" id="sZs-ie-R9q"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -203,10 +213,10 @@
             </objects>
             <point key="canvasLocation" x="2701" y="337"/>
         </scene>
-        <!--View Controller-->
+        <!--Final-->
         <scene sceneID="eI2-xH-F3s">
             <objects>
-                <viewController id="P1G-wx-pyZ" sceneMemberID="viewController">
+                <viewController title="Final" id="P1G-wx-pyZ" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xhv-1t-C1e"/>
                         <viewControllerLayoutGuide type="bottom" id="Pfc-fD-e1y"/>
