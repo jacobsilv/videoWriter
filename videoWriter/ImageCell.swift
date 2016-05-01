@@ -8,9 +8,20 @@
 
 import UIKit
 
-class ImageCell: UICollectionViewCell {
-
+class ImageCell: UICollectionViewCell, UIImagePickerControllerDelegate {
+    
+    var imagePicker = UIImagePickerController()
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var imageCell: UIImageView!
-
+    
+//    @IBAction func clicked(sender: UIButton) {
+//        NSLog("Cells clicked")
+//        
+//        //this opens photo library
+//        imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+//        ImageCell.presentViewController(imagePicker, animated: true, completion: nil)
+////        
+//        
+//    }
+    
 }

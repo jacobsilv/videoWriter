@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import ImageIO
+import MobileCoreServices
 
-class SecondViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class SecondViewController: UIViewController, UINavigationControllerDelegate, UICollectionViewDataSource, UICollectionViewDelegate, UIImagePickerControllerDelegate {
     
     var data: String?
     var frameNumber: Int = 0
     var images : NSMutableArray = []
     var imagePicker = UIImagePickerController()
+    var currentSelectedCell = -1;
+    var looping = 0;
 
     @IBOutlet weak var frameChooser: UICollectionView!
     @IBOutlet weak var frameNumberLabel: UILabel!
@@ -24,9 +28,13 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
         frameChooser.backgroundColor = UIColor.whiteColor();
         self.frameChooser.dataSource = self;
         self.frameChooser.delegate = self;
+        self.imagePicker.delegate = self;
         
         if let label = data {
             switchState.text = data
+        }
+        if (data == "Off") {
+            looping = 1;
         }
         
         frameNumberLabel.text = String(frameNumber)
@@ -75,31 +83,58 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
         
         //this is triggered when you selected a cell
         NSLog("Cell \(indexPath.row) selected")
+        currentSelectedCell = indexPath.row;
         
         //this opens photo library
         imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
         presentViewController(imagePicker, animated: true, completion: nil)
         
     }
-    
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        NSLog("yeah")
-        
-        
-        //This isn't being triggered but should in, which the following code should append images[] array and reload data should re-populate the cells, retriggering the above function that generates cells
-        
-        
-//        images.addObject((info[UIImagePickerControllerOriginalImage] as? UIImage)!)
-//        self.dismissViewControllerAnimated(true, completion: {})
-//        frameChooser.reloadData()
-//        NSLog(String(images.count))
+
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+        NSLog("media")
+        images[currentSelectedCell] = (info[UIImagePickerControllerOriginalImage] as? UIImage)!;
+        self.dismissViewControllerAnimated(true, completion: {})
+        frameChooser.reloadData()
+        NSLog(String(images.count))
     }
-    
     
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         NSLog("cancelled")
         self.imagePicker = UIImagePickerController()
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    @IBAction func createGif(sender: UIButton) {
+        let frameCount: Int = frameNumber
+        
+        let loopCount: Int = looping
+        let frameDelay: CGFloat = 1.0
+        
+        let fileProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFLoopCount as String: loopCount]] //set loopcount to 0 means loop forever
+        let frameProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFDelayTime as String: frameDelay]] //
+        
+        let documentsDirectoryURL: NSURL = NSFileManager.defaultManager().URLForDirectory(.DocumentDirectory, inDomain:.UserDomainMask, appropriateForURL:nil, create:true, error:nil)!;
+        
+        let fileURL: NSURL = documentsDirectoryURL.URLByAppendingPathComponent("animated.gif");
+        
+        let destination: CGImageDestinationRef = CGImageDestinationCreateWithURL(fileURL, kUTTypeGIF, frameCount, nil)!;
+        CGImageDestinationSetProperties(destination, fileProperties);
+        
+        var i: Int
+        for (i = 0; i < frameNumber; i+=1) {
+            CGImageDestinationAddImage(destination, images[i].CGImage!!, frameProperties);
+        }
+        
+        
+        if (!CGImageDestinationFinalize(destination)) {
+            NSLog("failed to finalize image destination");
+        }
+        
+        NSLog("url=%@", fileURL);
+        
+    }
+    
+    
 }
 
