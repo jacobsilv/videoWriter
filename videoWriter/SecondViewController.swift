@@ -9,53 +9,112 @@
 import UIKit
 import ImageIO
 import MobileCoreServices
+//import AVFoundation
 
 class SecondViewController: UIViewController, UINavigationControllerDelegate, UICollectionViewDataSource, UICollectionViewDelegate, UIImagePickerControllerDelegate {
     
-    @IBOutlet weak var submitButton: UIButton!
-    var data: String?
-    var frameNumber: Int = 0
-    var images : NSMutableArray = []
-    var imagePicker = UIImagePickerController()
-    var currentSelectedCell = -1;
-    var looping = 0;
-    var _fileURL:NSURL?
+    //var gif = NSURL(fileURLWithPath: "/Users/Lucifer/Desktop/giff.m4a")
+    //var audioPlayer = AVAudioPlayer()
 
+    
+    // figures out the loop information
+    var data: String?
+    // number of frames
+    var frameNumber: Int = 0
+    // images to save into an array
+    var images : NSMutableArray = []
+    // images to save into an array
+    var logoImages : NSMutableArray = []
+    
+    // variable that chooses the images that are set
+    var imagePicker = UIImagePickerController()
+    // no current selected cell off the start, user selects
+    var currentSelectedCell = -1;
+    // check for looping
+    var looping = 0;
+    // url of the gif
+    var _fileURL:NSURL?
+    var _logoURL:NSURL?
+    
+    
+    
+    // amount of delay between frames
+    var delay: Float?
+    // switching the number of frames
+    var oldValue: Double = 0.0;
+
+    // frame incrementer and decrementer
+    @IBOutlet weak var stepper: UIStepper!
+    // choose the frame
     @IBOutlet weak var frameChooser: UICollectionView!
+    // label the frames with their numbers
     @IBOutlet weak var frameNumberLabel: UILabel!
+    // labels for stating if looping is enabled
     @IBOutlet weak var switchState: UILabel!
+    @IBOutlet weak var loopingSwitch: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        
+        //audioPlayer = AVAudioPlayer(contentsOfURL: gif, fileTypeHint: nil)
+        //audioPlayer.prepareToPlay()
+        // set the frame incrementer and decrementer to its value
+        oldValue=stepper.value;
+        
+        //make the frames white and initialize them
         frameChooser.backgroundColor = UIColor.whiteColor();
         self.frameChooser.dataSource = self;
         self.frameChooser.delegate = self;
         self.imagePicker.delegate = self;
         
-        if let label = data {
-            switchState.text = data
-        }
+        //if let label = data {
+        //determine looping
+        switchState.text = data
+        loopingSwitch.text = data;
+        //}
         if (data == "Off") {
             looping = 1;
         }
+        else{
+            looping=0;
+        }
         
+        //state the number of frames
         frameNumberLabel.text = String(frameNumber)
+        
+        //reload the data
         frameChooser.reloadData()
         //initializes images[] with null values (0's) so that images can be swapped with the different frames out of order.
+        //make the image objects for the number of frames your have
+        
+        
         var i: Int
+        for (i=1; i < 4; i+=1){
+            logoImages.addObject(0);
+            
+        }
+        
+
         for(i=0; i<frameNumber;i=i+1) {
             images.addObject(0);
         }
+  
+        
+        
     }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-   
+    
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return frameNumber
     }
+    
+    
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         //create new cell object for each cell in collection
@@ -66,10 +125,11 @@ class SecondViewController: UIViewController, UINavigationControllerDelegate, UI
         cell.layer.cornerRadius = 4
         cell.layer.borderWidth = 1.0
         cell.layer.borderColor = UIColor.blackColor().CGColor
+        cell.layer.backgroundColor = UIColor.whiteColor().CGColor
 
         
         //this shows how this function loops through each cell:
-        cell.label.text = String(indexPath.item)
+        cell.label.text = String(indexPath.item + 1)
         
         
         //this is intended to populate each cell's imageview with image:
@@ -93,30 +153,75 @@ class SecondViewController: UIViewController, UINavigationControllerDelegate, UI
     }
 
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        NSLog(String(currentSelectedCell))
+        NSLog("media")
+        
+        //having the image assigned to the image picked and reloaded
         images[currentSelectedCell] = (info[UIImagePickerControllerOriginalImage] as? UIImage)!;
         self.dismissViewControllerAnimated(true, completion: {})
         frameChooser.reloadData()
         NSLog(String(images.count))
-        for(var i = 0;i<images.count; i++) {
-            NSLog(String(i))
-            if images[i] as! NSObject != 0 {
-                NSLog(images[i].description as String)
-            }
-        }
     }
     
+    // see if the action is canceled
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         NSLog("cancelled")
         self.imagePicker = UIImagePickerController()
         dismissViewControllerAnimated(true, completion: nil)
     }
     
-    @IBAction func createGif(sender: UIButton) {
+    
+    // having the frame number changed if incremented or decremented
+    @IBAction func stepper(sender: UIStepper, forEvent event: UIEvent) {
         
-        let loopCount: Int = looping
-        let frameDelay: CGFloat = 1.0
+        if (stepper.value>oldValue) {
+            oldValue=oldValue+1;
+            //Your Code You Wanted To Perform On Increment
+
+            frameNumber+=1
+            //images.addObject(0);
+            
+        }
+            
+        else {
+            oldValue=oldValue-1;
+            //Your Code You Wanted To Perform On Decrement
+     
+            if (frameNumber>0){
+                frameNumber-=1
+                //images.removeObjectAtIndex(images.count-1)
+            }
+        }
         
+        //frameChooser.reloadData()
+        viewDidLoad()
+        //NSLog("%d",oldValue);
+        
+    }
+
+    
+@IBAction func createGif(sender: UIButton) {
+        //audioPlayer.play()
+   
+        //let frameCount: Int = frameNumber
+    
+        // counts the number of non nil frames to count number of pictures
+        var i: Int
+        var numberOfPics:Int=0;
+        for (i = 0; i < frameNumber; i+=1) {
+            
+            if (images.objectAtIndex(i) as! NSObject != 0){
+                numberOfPics++;
+
+            }
+        }
+    
+        // have the loop count be the number of pictures
+        let loopCount: Int = numberOfPics
+        // frame delay will be determined by delay divided by 10 (0.0-1.0)
+        let frameDelay: Float = delay!/10.0
+    
+        NSLog("%f",frameDelay);
+    
         let fileProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFLoopCount as String: loopCount]] //set loopcount to 0 means loop forever
         let frameProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFDelayTime as String: frameDelay]] //
         
@@ -124,39 +229,49 @@ class SecondViewController: UIViewController, UINavigationControllerDelegate, UI
         
         let fileURL: NSURL = documentsDirectoryURL.URLByAppendingPathComponent("animated.gif");
         
-        var i: Int
+  
+        // counts the number of non empty images
         var counter: Int = 0
         for (i = 0; i < frameNumber; i+=1) {
             if images[i] as! NSObject != 0 {
                 counter++
             }
         }
-        
+    
+        // creates a gif reference destination to be assigned file properties
         let destination: CGImageDestinationRef = CGImageDestinationCreateWithURL(fileURL, kUTTypeGIF, counter, nil)!;
         CGImageDestinationSetProperties(destination, fileProperties);
-        
+    
+        // make all the non empty images in the destination
         for (i = 0; i < frameNumber; i+=1) {
             if images[i] as! NSObject != 0 {
                 CGImageDestinationAddImage(destination, images[i].CGImage!!, frameProperties);
             }
         }
         
-        
+        // make sure it is not null
         if (!CGImageDestinationFinalize(destination)) {
             NSLog("failed to finalize image destination");
         }
+        // print the url and assign it to itself
         else {
             NSLog("url=%@", fileURL);
             _fileURL = fileURL
+
         }
+    
+
         
     }
     
-    
+    // have the value passed be given as the file url gif
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "finish") {
             (segue.destinationViewController as! FinalViewController).passed = _fileURL
+    
         }
     }
+    
+
 }
 

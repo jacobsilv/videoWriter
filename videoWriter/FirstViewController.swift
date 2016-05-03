@@ -9,10 +9,12 @@
 import UIKit
 
 class FirstViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-    //random change
-    var frameOptions = [2,3,4,5,6,7,8,9,10]
+    
+    var frameOptions = [2,3,4,5,6,7,8,9,10,16,32]
     var selectedFrameOption : Int = 2
 
+    @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var sliderVal: UILabel!
     
     @IBOutlet weak var nswitch: UISwitch!
     
@@ -26,6 +28,16 @@ class FirstViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         self.framePicker.delegate = self;
     }
 
+    
+    @IBAction func sliderValueChanged(sender: UISlider) {
+        
+        let selectedValue = Float(sender.value)/10.0;
+        
+        sliderVal.text = String(format: "%.2fs", selectedValue)
+    }
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -39,6 +51,7 @@ class FirstViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
             } else {
                 state = "Off"
             }
+            (segue.destinationViewController as! SecondViewController).delay = slider.value
             (segue.destinationViewController as! SecondViewController).data = state
             (segue.destinationViewController as! SecondViewController).frameNumber = selectedFrameOption
         }
@@ -54,6 +67,7 @@ class FirstViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
         return String(frameOptions[row])
     }
+    
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedFrameOption = frameOptions[row]
