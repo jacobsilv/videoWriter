@@ -28,7 +28,7 @@ class FinalViewController: UIViewController {
             let image = NSData(contentsOfURL: passed!)
             
             ALAssetsLibrary().writeImageDataToSavedPhotosAlbum(image, metadata: nil, completionBlock: { (assetURL: NSURL!, error: NSError!) -> Void in
-                print(assetURL)
+                print(assetURL, terminator: "")
             })
         }
     }

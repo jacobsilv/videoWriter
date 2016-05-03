@@ -12,6 +12,7 @@ import MobileCoreServices
 
 class SecondViewController: UIViewController, UINavigationControllerDelegate, UICollectionViewDataSource, UICollectionViewDelegate, UIImagePickerControllerDelegate {
     
+    @IBOutlet weak var submitButton: UIButton!
     var data: String?
     var frameNumber: Int = 0
     var images : NSMutableArray = []
@@ -45,7 +46,6 @@ class SecondViewController: UIViewController, UINavigationControllerDelegate, UI
         for(i=0; i<frameNumber;i=i+1) {
             images.addObject(0);
         }
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -92,12 +92,18 @@ class SecondViewController: UIViewController, UINavigationControllerDelegate, UI
         
     }
 
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
-        NSLog("media")
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        NSLog(String(currentSelectedCell))
         images[currentSelectedCell] = (info[UIImagePickerControllerOriginalImage] as? UIImage)!;
         self.dismissViewControllerAnimated(true, completion: {})
         frameChooser.reloadData()
         NSLog(String(images.count))
+        for(var i = 0;i<images.count; i++) {
+            NSLog(String(i))
+            if images[i] as! NSObject != 0 {
+                NSLog(images[i].description as String)
+            }
+        }
     }
     
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
@@ -107,7 +113,6 @@ class SecondViewController: UIViewController, UINavigationControllerDelegate, UI
     }
     
     @IBAction func createGif(sender: UIButton) {
-        let frameCount: Int = frameNumber
         
         let loopCount: Int = looping
         let frameDelay: CGFloat = 1.0
@@ -115,26 +120,35 @@ class SecondViewController: UIViewController, UINavigationControllerDelegate, UI
         let fileProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFLoopCount as String: loopCount]] //set loopcount to 0 means loop forever
         let frameProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFDelayTime as String: frameDelay]] //
         
-        let documentsDirectoryURL: NSURL = NSFileManager.defaultManager().URLForDirectory(.DocumentDirectory, inDomain:.UserDomainMask, appropriateForURL:nil, create:true, error:nil)!;
+        let documentsDirectoryURL: NSURL = try! NSFileManager.defaultManager().URLForDirectory(.DocumentDirectory, inDomain:.UserDomainMask, appropriateForURL:nil, create:true);
         
         let fileURL: NSURL = documentsDirectoryURL.URLByAppendingPathComponent("animated.gif");
         
-        let destination: CGImageDestinationRef = CGImageDestinationCreateWithURL(fileURL, kUTTypeGIF, frameCount, nil)!;
+        var i: Int
+        var counter: Int = 0
+        for (i = 0; i < frameNumber; i+=1) {
+            if images[i] as! NSObject != 0 {
+                counter++
+            }
+        }
+        
+        let destination: CGImageDestinationRef = CGImageDestinationCreateWithURL(fileURL, kUTTypeGIF, counter, nil)!;
         CGImageDestinationSetProperties(destination, fileProperties);
         
-        var i: Int
         for (i = 0; i < frameNumber; i+=1) {
-            CGImageDestinationAddImage(destination, images[i].CGImage!!, frameProperties);
+            if images[i] as! NSObject != 0 {
+                CGImageDestinationAddImage(destination, images[i].CGImage!!, frameProperties);
+            }
         }
         
         
         if (!CGImageDestinationFinalize(destination)) {
             NSLog("failed to finalize image destination");
         }
-        
-        NSLog("url=%@", fileURL);
-        _fileURL = fileURL
-        
+        else {
+            NSLog("url=%@", fileURL);
+            _fileURL = fileURL
+        }
         
     }
     
