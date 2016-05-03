@@ -377,6 +377,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.garf.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Lucifer/Desktop/videoWriter/videoWriter/SwiftGIFImage-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -388,6 +389,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.garf.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Lucifer/Desktop/videoWriter/videoWriter/SwiftGIFImage-Bridging-Header.h";
 			};
 			name = Release;
 		};
