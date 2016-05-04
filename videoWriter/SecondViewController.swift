@@ -23,8 +23,7 @@ class SecondViewController: UIViewController, UINavigationControllerDelegate, UI
     var frameNumber: Int = 0
     // images to save into an array
     var images : NSMutableArray = []
-    // images to save into an array
-    var logoImages : NSMutableArray = []
+    
     
     // variable that chooses the images that are set
     var imagePicker = UIImagePickerController()
@@ -50,7 +49,6 @@ class SecondViewController: UIViewController, UINavigationControllerDelegate, UI
     // label the frames with their numbers
     @IBOutlet weak var frameNumberLabel: UILabel!
     // labels for stating if looping is enabled
-    @IBOutlet weak var switchState: UILabel!
     @IBOutlet weak var loopingSwitch: UILabel!
     
     override func viewDidLoad() {
@@ -70,7 +68,7 @@ class SecondViewController: UIViewController, UINavigationControllerDelegate, UI
         
         //if let label = data {
         //determine looping
-        switchState.text = data
+        //switchState.text = data
         loopingSwitch.text = data;
         //}
         if (data == "Off") {
@@ -89,13 +87,8 @@ class SecondViewController: UIViewController, UINavigationControllerDelegate, UI
         //make the image objects for the number of frames your have
         
         
-        var i: Int
-        for (i=1; i < 4; i+=1){
-            logoImages.addObject(0);
-            
-        }
-        
-
+  
+        var i:Int
         for(i=0; i<frameNumber;i=i+1) {
             images.addObject(0);
         }

@@ -108,12 +108,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzu-wu-KAX">
-                                <rect key="frame" x="345" y="91" width="34" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="N0H-PJ-hdv">
                                 <rect key="frame" x="113" y="526" width="94" height="29"/>
                                 <connections>
@@ -209,7 +203,6 @@
                         <outlet property="frameNumberLabel" destination="GxG-ae-c35" id="L0H-Fe-OsO"/>
                         <outlet property="loopingSwitch" destination="bhV-nW-14R" id="1yZ-ex-ix7"/>
                         <outlet property="stepper" destination="N0H-PJ-hdv" id="7Hx-7D-4Az"/>
-                        <outlet property="switchState" destination="hzu-wu-KAX" id="h9Y-lR-Q6c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Nu-s3-dDq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -231,9 +224,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RHq-BV-W62">
                                 <rect key="frame" x="21" y="113" width="279" height="257"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="omg-9W-cy1">
-                                <rect key="frame" x="103" y="441" width="115" height="107"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjP-KC-SC2">
                                 <rect key="frame" x="101" y="382" width="117" height="59"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -249,7 +239,6 @@
                     <connections>
                         <outlet property="finalGif" destination="RHq-BV-W62" id="yNh-9a-yQ6"/>
                         <outlet property="save" destination="HjP-KC-SC2" id="UtQ-SG-8Am"/>
-                        <outlet property="subGif" destination="omg-9W-cy1" id="ch4-bt-QqL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vut-vO-qPd" userLabel="First Responder" sceneMemberID="firstResponder"/>

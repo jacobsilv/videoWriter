@@ -13,11 +13,11 @@ import AssetsLibrary
 class FinalViewController: UIViewController {
     @IBOutlet weak var finalGif: UIImageView!
     
-    @IBOutlet weak var subGif: UIImageView!
+
     
   
     var passed:NSURL?
-    let logo = NSURL(string: "file:///Users/Lucifer/Library/Developer/CoreSimulator/Devices/8A288179-48FF-4DC3-824C-97A018ECD2E7/data/Containers/Data/Application/8F446066-A301-41DF-AFED-958E81F0A382/Documents/animated.gif")
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -35,10 +35,7 @@ class FinalViewController: UIViewController {
             finalGif?.image = UIImage.animatedImageWithAnimatedGIFURL(passed)
             
         }
-        if logo != nil {
-            // animate the url gif
-            subGif?.image = UIImage.animatedImageWithAnimatedGIFURL(passed)
-        }
+      
       
             
     
