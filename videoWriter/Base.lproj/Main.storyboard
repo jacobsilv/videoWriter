@@ -37,17 +37,8 @@
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VFL-dX-lZ3">
-                                <rect key="frame" x="-4" y="291" width="320" height="162"/>
+                                <rect key="frame" x="16" y="325" width="277" height="140"/>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number of Frames:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDa-3C-eM5">
-                                <rect key="frame" x="-20" y="280" width="361" height="27"/>
-                                <fontDescription key="fontDescription" name="HKCompakt-Medium" family="HK Compakt" pointSize="22"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gglogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gc8-ua-vJW">
-                                <rect key="frame" x="63" y="80" width="194" height="194"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Looping:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avv-Ln-D2c">
                                 <rect key="frame" x="35" y="476" width="143" height="31"/>
                                 <fontDescription key="fontDescription" name="HKCompakt-Medium" family="HK Compakt" pointSize="22"/>
@@ -75,11 +66,21 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JPG-34-yj6">
                                 <rect key="frame" x="244" y="476" width="51" height="31"/>
                             </switch>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CkY-Wl-dJD">
+                                <rect key="frame" x="-7" y="37" width="323" height="273"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number of Frames:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEJ-pc-fKz">
+                                <rect key="frame" x="-20" y="309" width="361" height="27"/>
+                                <fontDescription key="fontDescription" name="HKCompakt-Medium" family="HK Compakt" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="rm7-e6-En6"/>
                     <connections>
+                        <outlet property="firstGif" destination="CkY-Wl-dJD" id="nPX-gV-IZS"/>
                         <outlet property="framePicker" destination="VFL-dX-lZ3" id="mFc-hJ-kV1"/>
                         <outlet property="nswitch" destination="JPG-34-yj6" id="cyQ-hh-TaI"/>
                         <outlet property="slider" destination="Ptz-RW-6Bs" id="ZbP-cT-n7e"/>
@@ -222,10 +223,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RHq-BV-W62">
-                                <rect key="frame" x="21" y="113" width="279" height="257"/>
+                                <rect key="frame" x="21" y="113" width="279" height="240"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjP-KC-SC2">
-                                <rect key="frame" x="101" y="382" width="117" height="59"/>
+                                <rect key="frame" x="102" y="495" width="117" height="59"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
@@ -264,7 +265,4 @@
             <point key="canvasLocation" x="635.73333333333335" y="319.02666666666653"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="gglogo.png" width="1024" height="1024"/>
-    </resources>
 </document>

@@ -17,6 +17,7 @@ class FinalViewController: UIViewController {
     
   
     var passed:NSURL?
+
  
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,9 +36,6 @@ class FinalViewController: UIViewController {
             finalGif?.image = UIImage.animatedImageWithAnimatedGIFURL(passed)
             
         }
-      
-      
-            
     
        
     }

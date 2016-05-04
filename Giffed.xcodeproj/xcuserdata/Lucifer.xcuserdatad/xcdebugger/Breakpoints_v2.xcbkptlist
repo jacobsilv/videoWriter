@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "videoWriter/FinalViewController.swift"
+            timestampString = "483982070.943066"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "FinalViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "videoWriter.FinalViewController.data.setter : Swift.Optional&lt;__ObjC.NSData&gt;"
+                  moduleName = "videoWriter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Lucifer/Desktop/videoWriter-master/videoWriter/FinalViewController.swift"
+                  timestampString = "483843150.449239"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "videoWriter.FinalViewController.data.materializeForSet : Swift.Optional&lt;__ObjC.NSData&gt;"
+                  moduleName = "videoWriter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Lucifer/Desktop/videoWriter-master/videoWriter/FinalViewController.swift"
+                  timestampString = "483843150.449418"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "videoWriter.FinalViewController.init (videoWriter.FinalViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; videoWriter.FinalViewController"
+                  moduleName = "videoWriter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Lucifer/Desktop/videoWriter-master/videoWriter/FinalViewController.swift"
+                  timestampString = "483843150.449609"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "159">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "videoWriter.FinalViewController.init (videoWriter.FinalViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;videoWriter.FinalViewController&gt;"
+                  moduleName = "videoWriter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Lucifer/Desktop/videoWriter-master/videoWriter/FinalViewController.swift"
+                  timestampString = "483843150.449786"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "videoWriter/FinalViewController.swift"
+            timestampString = "483973080.182141"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "FinalViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "videoWriter.FinalViewController.data.getter : Swift.Optional&lt;__ObjC.NSData&gt;"
+                  moduleName = "videoWriter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Lucifer/Desktop/videoWriter-master/videoWriter/FinalViewController.swift"
+                  timestampString = "483843186.664754"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "videoWriter.FinalViewController.data.setter : Swift.Optional&lt;__ObjC.NSData&gt;"
+                  moduleName = "videoWriter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Lucifer/Desktop/videoWriter-master/videoWriter/FinalViewController.swift"
+                  timestampString = "483843186.664929"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "videoWriter.FinalViewController.data.materializeForSet : Swift.Optional&lt;__ObjC.NSData&gt;"
+                  moduleName = "videoWriter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Lucifer/Desktop/videoWriter-master/videoWriter/FinalViewController.swift"
+                  timestampString = "483843186.665052"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "videoWriter.FinalViewController.init (videoWriter.FinalViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; videoWriter.FinalViewController"
+                  moduleName = "videoWriter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Lucifer/Desktop/videoWriter-master/videoWriter/FinalViewController.swift"
+                  timestampString = "483843186.665166"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "159">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "videoWriter.FinalViewController.init (videoWriter.FinalViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;videoWriter.FinalViewController&gt;"
+                  moduleName = "videoWriter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Lucifer/Desktop/videoWriter-master/videoWriter/FinalViewController.swift"
+                  timestampString = "483843186.665277"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "videoWriter/SecondViewController.swift"
+            timestampString = "484026368.758038"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "194"
+            endingLineNumber = "194"
+            landmarkName = "SecondViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -11,7 +11,7 @@
 		92292B7C1CD3AFE50011121E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92292B7B1CD3AFE50011121E /* FirstViewController.swift */; };
 		92292B7F1CD3AFE50011121E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92292B7D1CD3AFE50011121E /* Main.storyboard */; };
 		92292B811CD3AFE50011121E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92292B801CD3AFE50011121E /* Images.xcassets */; };
-		92292B841CD3AFE50011121E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92292B821CD3AFE50011121E /* LaunchScreen.xib */; };
+		92292B841CD3AFE50011121E /* Giffed in Resources */ = {isa = PBXBuildFile; fileRef = 92292B821CD3AFE50011121E /* Giffed */; };
 		92292B901CD3AFE50011121E /* videoWriterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92292B8F1CD3AFE50011121E /* videoWriterTests.swift */; };
 		92292B9A1CD3B0C00011121E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92292B991CD3B0C00011121E /* SecondViewController.swift */; };
 		92E16AF51CD3EEF1005EA79E /* HKCompakt-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92E16AF41CD3EEB2005EA79E /* HKCompakt-Medium.ttf */; };
@@ -19,7 +19,6 @@
 		92E16AFB1CD5815C005EA79E /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E16AFA1CD5815C005EA79E /* ImageCell.swift */; };
 		92E16AFF1CD66AB8005EA79E /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E16AFE1CD66AB8005EA79E /* FinalViewController.swift */; };
 		92E16B031CD66E95005EA79E /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E16B021CD66E95005EA79E /* UIImage+animatedGIF.m */; };
-		99AD08521CD9E76B00191034 /* animated.gif in Resources */ = {isa = PBXBuildFile; fileRef = 99AD08511CD9E76B00191034 /* animated.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +38,7 @@
 		92292B7B1CD3AFE50011121E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		92292B7E1CD3AFE50011121E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92292B801CD3AFE50011121E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		92292B831CD3AFE50011121E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		92292B831CD3AFE50011121E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Base; path = Base.lproj/Giffed; sourceTree = "<group>"; };
 		92292B891CD3AFE50011121E /* videoWriterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = videoWriterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92292B8E1CD3AFE50011121E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92292B8F1CD3AFE50011121E /* videoWriterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoWriterTests.swift; sourceTree = "<group>"; };
@@ -51,7 +50,6 @@
 		92E16B001CD66E8B005EA79E /* SwiftGIFImage-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftGIFImage-Bridging-Header.h"; sourceTree = "<group>"; };
 		92E16B011CD66E95005EA79E /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
 		92E16B021CD66E95005EA79E /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
-		99AD08511CD9E76B00191034 /* animated.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animated.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +73,9 @@
 		92292B6B1CD3AFE40011121E = {
 			isa = PBXGroup;
 			children = (
-				99AD08511CD9E76B00191034 /* animated.gif */,
 				92E16B011CD66E95005EA79E /* UIImage+animatedGIF.h */,
 				92E16B021CD66E95005EA79E /* UIImage+animatedGIF.m */,
-				92292B761CD3AFE50011121E /* videoWriter */,
+				92292B761CD3AFE50011121E /* Giffed */,
 				92292B8C1CD3AFE50011121E /* videoWriterTests */,
 				92292B751CD3AFE50011121E /* Products */,
 			);
@@ -93,7 +90,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		92292B761CD3AFE50011121E /* videoWriter */ = {
+		92292B761CD3AFE50011121E /* Giffed */ = {
 			isa = PBXGroup;
 			children = (
 				92E16B001CD66E8B005EA79E /* SwiftGIFImage-Bridging-Header.h */,
@@ -104,9 +101,10 @@
 				92E16AFA1CD5815C005EA79E /* ImageCell.swift */,
 				92292B7D1CD3AFE50011121E /* Main.storyboard */,
 				92292B801CD3AFE50011121E /* Images.xcassets */,
-				92292B821CD3AFE50011121E /* LaunchScreen.xib */,
+				92292B821CD3AFE50011121E /* Giffed */,
 				92292B771CD3AFE50011121E /* Supporting Files */,
 			);
+			name = Giffed;
 			path = videoWriter;
 			sourceTree = "<group>";
 		};
@@ -196,7 +194,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 92292B6F1CD3AFE40011121E /* Build configuration list for PBXProject "videoWriter" */;
+			buildConfigurationList = 92292B6F1CD3AFE40011121E /* Build configuration list for PBXProject "Giffed" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -222,10 +220,9 @@
 			files = (
 				92E16AF51CD3EEF1005EA79E /* HKCompakt-Medium.ttf in Resources */,
 				92292B7F1CD3AFE50011121E /* Main.storyboard in Resources */,
-				92292B841CD3AFE50011121E /* LaunchScreen.xib in Resources */,
+				92292B841CD3AFE50011121E /* Giffed in Resources */,
 				92292B811CD3AFE50011121E /* Images.xcassets in Resources */,
 				92E16AF71CD3F137005EA79E /* gglogo.png in Resources */,
-				99AD08521CD9E76B00191034 /* animated.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,12 +276,12 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		92292B821CD3AFE50011121E /* LaunchScreen.xib */ = {
+		92292B821CD3AFE50011121E /* Giffed */ = {
 			isa = PBXVariantGroup;
 			children = (
 				92292B831CD3AFE50011121E /* Base */,
 			);
-			name = LaunchScreen.xib;
+			name = Giffed;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -383,11 +380,10 @@
 				INFOPLIST_FILE = videoWriter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.garf.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = giffed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Lucifer/Desktop/videoWriter-master/videoWriter/SwiftGIFImage-Bridging-Header.h";
-				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -400,11 +396,10 @@
 				INFOPLIST_FILE = videoWriter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.garf.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = giffed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Lucifer/Desktop/videoWriter-master/videoWriter/SwiftGIFImage-Bridging-Header.h";
-				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -447,7 +442,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		92292B6F1CD3AFE40011121E /* Build configuration list for PBXProject "videoWriter" */ = {
+		92292B6F1CD3AFE40011121E /* Build configuration list for PBXProject "Giffed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				92292B911CD3AFE50011121E /* Debug */,

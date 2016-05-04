@@ -19,13 +19,28 @@ class FirstViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     @IBOutlet weak var nswitch: UISwitch!
     
     @IBOutlet weak var framePicker: UIPickerView!
-
     
+    
+    @IBOutlet weak var firstGif: UIImageView!
+    var url:NSURL?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.framePicker.dataSource = self;
         self.framePicker.delegate = self;
+        
+        url = NSURL.fileURLWithPath("/Users/Lucifer/Desktop/giffed/animated.gif");
+        
+        // make sure that the value passed is not null
+        if url != nil {
+            
+            // print the path of the url for the gif
+            NSLog(url!.lastPathComponent!)
+            
+            // animate the url gif
+            firstGif?.image = UIImage.animatedImageWithAnimatedGIFURL(url)
+            
+        }
     }
 
     

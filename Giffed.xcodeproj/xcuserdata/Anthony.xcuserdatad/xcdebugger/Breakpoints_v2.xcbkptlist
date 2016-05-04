@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "videoWriter/SecondViewController.swift"
+            timestampString = "483772388.726878"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "SecondViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "videoWriter.SecondViewController.images.getter : ObjectiveC.NSMutableArray"
+                  moduleName = "videoWriter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Anthony/Desktop/xcode%20shit/videoWriter/videoWriter/SecondViewController.swift"
+                  timestampString = "483757362.149193"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "videoWriter.SecondViewController.images.setter : ObjectiveC.NSMutableArray"
+                  moduleName = "videoWriter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Anthony/Desktop/xcode%20shit/videoWriter/videoWriter/SecondViewController.swift"
+                  timestampString = "483757362.149375"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "videoWriter.SecondViewController.images.materializeForSet : ObjectiveC.NSMutableArray"
+                  moduleName = "videoWriter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Anthony/Desktop/xcode%20shit/videoWriter/videoWriter/SecondViewController.swift"
+                  timestampString = "483757362.149512"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "videoWriter.SecondViewController.init (videoWriter.SecondViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; videoWriter.SecondViewController"
+                  moduleName = "videoWriter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Anthony/Desktop/xcode%20shit/videoWriter/videoWriter/SecondViewController.swift"
+                  timestampString = "483757362.149642"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "131">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "videoWriter.SecondViewController.init (videoWriter.SecondViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; videoWriter.SecondViewController"
+                  moduleName = "videoWriter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Anthony/Desktop/xcode%20shit/videoWriter/videoWriter/SecondViewController.swift"
+                  timestampString = "483757362.149777"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "videoWriter/SecondViewController.swift"
+            timestampString = "483814605.282562"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "collectionView(_:didSelectItemAtIndexPath:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "videoWriter/ImageCell.swift"
+            timestampString = "483771204.298299"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "ImageCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "videoWriter.ImageCell.imagePicker.setter : ObjectiveC.UIImagePickerController"
+                  moduleName = "videoWriter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Anthony/Desktop/xcode%20shit/videoWriter/videoWriter/ImageCell.swift"
+                  timestampString = "483816452.067612"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "videoWriter.ImageCell.imagePicker.materializeForSet : ObjectiveC.UIImagePickerController"
+                  moduleName = "videoWriter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Anthony/Desktop/xcode%20shit/videoWriter/videoWriter/ImageCell.swift"
+                  timestampString = "483816452.067842"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "videoWriter.ImageCell.init (videoWriter.ImageCell.Type)(frame : C.CGRect) -&gt; videoWriter.ImageCell"
+                  moduleName = "videoWriter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Anthony/Desktop/xcode%20shit/videoWriter/videoWriter/ImageCell.swift"
+                  timestampString = "483816452.068061"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "videoWriter.ImageCell.init (videoWriter.ImageCell.Type)(coder : ObjectiveC.NSCoder) -&gt; videoWriter.ImageCell"
+                  moduleName = "videoWriter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Anthony/Desktop/xcode%20shit/videoWriter/videoWriter/ImageCell.swift"
+                  timestampString = "483816452.068288"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "videoWriter/FinalViewController.swift"
+            timestampString = "483816975.082254"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "FinalViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "videoWriter.FinalViewController.passed.getter : Swift.Optional&lt;ObjectiveC.NSURL&gt;"
+                  moduleName = "videoWriter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Anthony/Desktop/xcode%20shit/videoWriter/videoWriter/FinalViewController.swift"
+                  timestampString = "483816452.069897"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "videoWriter.FinalViewController.passed.materializeForSet : Swift.Optional&lt;ObjectiveC.NSURL&gt;"
+                  moduleName = "videoWriter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Anthony/Desktop/xcode%20shit/videoWriter/videoWriter/FinalViewController.swift"
+                  timestampString = "483816452.070174"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "videoWriter.FinalViewController.init (videoWriter.FinalViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; videoWriter.FinalViewController"
+                  moduleName = "videoWriter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Anthony/Desktop/xcode%20shit/videoWriter/videoWriter/FinalViewController.swift"
+                  timestampString = "483816452.070354"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "187">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "videoWriter.FinalViewController.init (videoWriter.FinalViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; videoWriter.FinalViewController"
+                  moduleName = "videoWriter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Anthony/Desktop/xcode%20shit/videoWriter/videoWriter/FinalViewController.swift"
+                  timestampString = "483816452.070482"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "112">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "videoWriter/FinalViewController.swift"
+            timestampString = "483816975.082254"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "videoWriter/FinalViewController.swift"
+            timestampString = "483816975.082254"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
